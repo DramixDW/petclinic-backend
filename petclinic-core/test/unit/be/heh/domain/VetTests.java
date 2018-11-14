@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class VetTests {
 
-    @Test
+   /* @Test
     public void test_object_vet(){
         //be.heh.petclinic.domain.Vet vet =new be.heh.petclinic.domain.Vet("James","James","none");
 
@@ -14,5 +14,6 @@ public class VetTests {
        // assertEquals("James",vet.getFirstname());
         //assertEquals("none",vet.getSpeciality());
     }
+    */
 
 }
