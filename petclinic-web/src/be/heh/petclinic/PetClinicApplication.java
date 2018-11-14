@@ -10,9 +10,8 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 @ImportResource(
         {
-                "file:D:\\Capriclo\\Desktop\\petcbackend\\petclinic-core\\src\\be\\heh\\petclinic\\component\\vet\\component.xml",
-				"file:D:\\Capriclo\\Desktop\\petcbackend\\petclinic-core\\src\\be\\heh\\petclinic\\component\\visit\\componentvisit.xml",
-                "file:D:\\Capriclo\\Desktop\\petcbackend\\petclinic-core\\src\\be\\heh\\petclinic\\config.xml"}
+                "file:/home/dramixdw/Desktop/Cours/ProjetClinic/petcbackend/petclinic-core/src/be/heh/petclinic/component/component.xml",
+                "file:/home/dramixdw/Desktop/Cours/ProjetClinic/petcbackend/petclinic-core/src/be/heh/petclinic/config.xml"}
                 )
 
 public class PetClinicApplication {
