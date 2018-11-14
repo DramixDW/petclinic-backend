@@ -1,10 +1,7 @@
 package be.heh.petclinic.web;
 
-import be.heh.petclinic.PetClinicApplication;
 import be.heh.petclinic.component.vet.VetComponent;
 import be.heh.petclinic.domain.Vet;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,21 +18,14 @@ public class VetRestController {
 	private VetComponent vetComponentImpl;
 
 	@RequestMapping("vets")
-	public ResponseEntity<Collection<Vet>> getVets(){
-		System.out.println("lol");
+	public ResponseEntity<Collection<Vet>> getVets() {
 		Collection<Vet> vets = vetComponentImpl.getVets();
-		if(vets.isEmpty()){
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-		return new ResponseEntity<>(vets, HttpStatus.OK);
+		return vets.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(vets, HttpStatus.OK);
 	}
 
 	@RequestMapping("vet")
 	public ResponseEntity<Vet> getVet(@RequestParam(value="name") String name){
 		Vet vet = vetComponentImpl.getVet(name);
-		if(vet == null){
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-		return new ResponseEntity<>(vet,HttpStatus.OK);
+		return vet == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(vet,HttpStatus.OK);
 	}
 }
