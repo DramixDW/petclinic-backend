@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="be.heh.domain.VetTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-11-14T08:02:54" hostname="Dramix" time="0.006">
-  <properties/>
-  <testcase name="test_object_vet()" classname="be.heh.domain.VetTests" time="0.006"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
