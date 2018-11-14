@@ -8,7 +8,8 @@ import javax.sql.DataSource;
 
 import be.heh.petclinic.domain.*;
 
-public class VetComponentImpl implements VetComponent {
+class VetComponentImpl implements VetComponent {
+
     private JdbcVetDao vetDao;
   
     public VetComponentImpl(DataSource dataSource){
@@ -17,10 +18,18 @@ public class VetComponentImpl implements VetComponent {
 
     @Override
     public Collection<Vet> getVets() {
-        List<Vet> vets = vetDao.getEvents();
-        //vets.add(new Vet("James","James","none"));
-        //vets.add(new Vet("Helen","Helen","radiology"));
-        //vets.add(new Vet("Linda","Linda","surgery"));
-        return vets;
+        return vetDao.fetchAll();
     }
+
+    @Override
+    public Vet getVet(String lastName) {
+        return vetDao.get(lastName);
+    }
+
+    @Override
+    public Vet getVet(Integer id) {
+        return vetDao.get(id);
+    }
+
+
 }

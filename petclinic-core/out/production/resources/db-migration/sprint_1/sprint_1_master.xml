@@ -6,7 +6,6 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="database_user_petclinic.sql" relativeToChangelogFile="true"/>
-    <include file="create_vets.sql" relativeToChangelogFile="true"/>
-    <include file="populate_vets.sql" relativeToChangelogFile="true"/>    
+    <include file="populate.sql" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

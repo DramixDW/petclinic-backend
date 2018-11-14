@@ -4,7 +4,6 @@ public class Vet {
 
     private String lastname;
     private String firstname;
-    private String speciality;
 
     public void setLastname(String lastname){
         this.lastname = lastname;
@@ -12,10 +11,6 @@ public class Vet {
 
     public void setFirstname(String firstname){
         this.firstname = firstname;
-    }
-
-    public void setSpeciality(String speciality){
-        this.speciality = speciality;
     }
 
     public String getLastname(){
@@ -26,8 +21,5 @@ public class Vet {
         return this.firstname;
     }
 
-    public String getSpeciality(){
-        return this.speciality;
-    }
 
 }

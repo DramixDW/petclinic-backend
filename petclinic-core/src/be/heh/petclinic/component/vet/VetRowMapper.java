@@ -13,7 +13,6 @@ public class VetRowMapper implements RowMapper<Vet> {
         Vet vet = new Vet();
         vet.setLastname(rs.getString("last_name"));
         vet.setFirstname(rs.getString("first_name"));
-        vet.setSpeciality(rs.getString("speciality"));
         return vet;
     }
 
