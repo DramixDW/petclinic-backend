@@ -17,18 +17,18 @@ class VetComponentImpl implements VetComponent {
     }
 
     @Override
-    public Collection<Vet> getVets() {
-        return vetDao.fetchAll();
+    public Collection<Vet> getVets(Boolean withSpecialties) {
+        return vetDao.fetchAll(withSpecialties);
     }
 
     @Override
     public Vet getVet(String lastName) {
-        return vetDao.get(lastName);
+        return vetDao.get(lastName,true);
     }
 
     @Override
     public Vet getVet(Integer id) {
-        return vetDao.get(id);
+        return vetDao.get(id,true);
     }
 
 
