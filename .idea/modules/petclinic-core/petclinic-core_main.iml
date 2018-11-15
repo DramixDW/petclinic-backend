@@ -6,6 +6,7 @@
         <fileset id="fileset" name="Component" removed="false">
           <file>file://$MODULE_DIR$/../../../petclinic-core/src/be/heh/petclinic/component/vet/component.xml</file>
           <file>file://$MODULE_DIR$/../../../petclinic-core/src/be/heh/petclinic/config.xml</file>
+          <file>file://$MODULE_DIR$/../../../petclinic-core/src/be/heh/petclinic/component/component.xml</file>
         </fileset>
       </configuration>
     </facet>
