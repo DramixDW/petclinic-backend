@@ -1,20 +1,17 @@
 package be.heh.petclinic.component.vet;
 
-import org.springframework.jdbc.core.RowMapper;
-import java.sql.SQLException;
-import java.sql.ResultSet;
-
 import be.heh.petclinic.domain.Vet;
+import org.springframework.jdbc.core.RowMapper;
+
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+
 
 public class VetRowMapper implements RowMapper<Vet> {
-
     @Override
-    public Vet mapRow(ResultSet rs,int i) throws SQLException {
-        Vet vet = new Vet();
-        vet.setLastname(rs.getString("last_name"));
-        vet.setFirstname(rs.getString("first_name"));
-        return vet;
+    public Vet mapRow(ResultSet rs, int rowNum) throws SQLException {
+        ResultSetMetaData data = rs.getMetaData();
+        return new Vet(rs.getString("last_name"),rs.getString("first_name"));
     }
-
-
 }

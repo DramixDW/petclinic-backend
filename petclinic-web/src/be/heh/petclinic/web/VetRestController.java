@@ -2,6 +2,7 @@ package be.heh.petclinic.web;
 
 import be.heh.petclinic.component.vet.VetComponent;
 import be.heh.petclinic.domain.Vet;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +19,8 @@ public class VetRestController {
 	private VetComponent vetComponentImpl;
 
 	@RequestMapping("vets")
-	public ResponseEntity<Collection<Vet>> getVets() {
-		Collection<Vet> vets = vetComponentImpl.getVets();
+	public ResponseEntity<Collection<Vet>> getVets(@RequestParam(value="specs",required = false,defaultValue = "true") boolean specs) {
+		Collection<Vet> vets = vetComponentImpl.getVets(specs);
 		return vets.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(vets, HttpStatus.OK);
 	}
 
