@@ -30,4 +30,9 @@ public class JdbcOwnerDao {
             return res.get(0);
         }
     }
+
+    public List<Owner> getOwnerWithPetsAndVisits()
+    {
+
+    }
 }

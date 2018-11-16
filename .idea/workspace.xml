@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91c9b5f8-3a40-4344-8e7d-8aec5232fcb8" name="Default" comment="">
+<<<<<<< Updated upstream
+=======
+      <change afterPath="$PROJECT_DIR$/petclinic-core/build/resources/main/components/component.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petclinic-core/build/resources/main/components/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petclinic-core/out/production/classes/be/heh/petclinic/component/vet/VetExtractor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petclinic-core/out/production/classes/be/heh/petclinic/domain/Specialty.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petclinic-core/out/production/resources/components/component.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petclinic-core/out/production/resources/components/config.xml" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/petclinic-core/build/classes/java/main/be/heh/petclinic/component/Owner/component.xml" beforeDir="false" />
@@ -34,6 +44,26 @@
       <change beforePath="$PROJECT_DIR$/petclinic-web/build/libs/petclinic-web-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-web/build/libs/petclinic-web-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VetRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VetRestController.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/petclinic-core/petclinic-core_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/petclinic-core/petclinic-core_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/classes/java/main/be/heh/petclinic/component/Owner/component.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/classes/java/main/be/heh/petclinic/component/vet/component.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/classes/java/main/be/heh/petclinic/component/visit/componentvisit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/libs/petclinic-core.jar" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/build/libs/petclinic-core.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/component.xml" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/src/resources/components/component.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-core/src/resources/components/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-web/build/classes/java/main/be/heh/petclinic/PetClinicApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-web/build/classes/java/main/be/heh/petclinic/PetClinicApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-web/build/libs/petclinic-web-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-web/build/libs/petclinic-web-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -44,6 +74,7 @@
     <ignored path="$PROJECT_DIR$/petclinic-web/build/" />
     <ignored path="$PROJECT_DIR$/petclinic-web/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +138,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/JdbcPetDao.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,11 +146,23 @@
               <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+      <file leaf-file-name="PetClinicApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/OwnerRestController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -127,10 +171,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="VisitsRestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VisitsRestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VetRestController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,10 +200,27 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="VetRestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VetRestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="VetRowMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetRowMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/petclinic-core/src/resources/components/component.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -175,27 +244,48 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java">
+=======
+      <file leaf-file-name="VetComponentImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetComponentImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="435">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
               </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="gradlew" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-web/gradlew">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-web/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VetComponent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+<<<<<<< Updated upstream
+            <state relative-caret-position="384">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="31" selection-end-column="5" />
+=======
+            <state relative-caret-position="136">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,11 +293,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/domain/Owner.java">
+      <file leaf-file-name="JdbcVetDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/JdbcVetDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="663">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcOwnerDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -235,7 +340,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="/usr/share/java/gradle" />
+        <entry key="$PROJECT_DIR$" value="C:\Gradle" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -1086,7 +1191,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="13879114264000" />
+        <entry key="$PROJECT_DIR$" value="13879815680323" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="0" />
         <entry key="$PROJECT_DIR$/petclinic-core/.gradle" value="0" />
@@ -1117,8 +1222,6 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/gradle.plugin.org.liquibase/liquibase-gradle-plugin/2.0.1/c61d6afa4c8b47a41a2ee121c21cd3e9ccd48839/liquibase-gradle-plugin-2.0.1-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.12/5588d177f5427312a68cd2589545fc58f4513b9b/groovy-2.4.12-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/gradle.plugin.org.liquibase/liquibase-gradle-plugin/2.0.1/df669a30b52693233c42200de6077c266d36c861/liquibase-gradle-plugin-2.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.12/a43be367110c491787219f1c128b5b5fc54f1e70/groovy-2.4.12.jar" />
                           </list>
@@ -1132,17 +1235,11 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.4.RELEASE/dece1d0f12fe88e696ea11656d4595825ab61fc7/spring-boot-gradle-plugin-2.0.4.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.4.RELEASE/75fc6606e4fd8caa25ed1def196005d8668f00f3/spring-boot-loader-tools-2.0.4.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/d6c42859b24b62034b2a5e0db5ea12c688493d48/dependency-management-plugin-1.0.6.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.8.RELEASE/a85fa9dfe4cb9c643ca3775279c8a1b50cd9e0b3/spring-core-5.0.8.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/43a23e357fa7b187c261520914c0b001ea1a62a2/commons-compress-1.14-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.8.RELEASE/b2d3223c5aa039d4046c8664b9a062e99b2d29fe/spring-jcl-5.0.8.RELEASE-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.4.RELEASE/b18a052691327096ba583b11d5fc052123500db3/spring-boot-gradle-plugin-2.0.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.4.RELEASE/24a1d9eac0090e12d20678cfbf7299d81d63ea7/spring-boot-loader-tools-2.0.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.8.RELEASE/dc39c49e3246cdf73d3786ac41119140aed3fa08/spring-core-5.0.8.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/7b18320d668ab080758bf5383d6d8fcf750babce/commons-compress-1.14.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.8.RELEASE/dc39c49e3246cdf73d3786ac41119140aed3fa08/spring-core-5.0.8.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.8.RELEASE/a1fa8fb560fb252321776e16bc9ac8201af4ef5e/spring-jcl-5.0.8.RELEASE.jar" />
                           </list>
                         </option>
@@ -1155,84 +1252,86 @@
               <option name="name" value="petclinic" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="/usr/share/java/gradle/lib/gradle-persistent-cache-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-6.jar" />
-                  <option value="/usr/share/java/gradle/lib/ant-launcher-1.9.11.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-base-services-groovy-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-wrapper-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-messaging-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-tooling-api-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-launcher-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-build-cache-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-installation-beacon-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-native-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-resources-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-model-core-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-api-metadata-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-6.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-process-services-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-model-groovy-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/groovy-all-2.4.15.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-cli-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-runtime-api-info-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/ant-1.9.11.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-base-services-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-docs-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-logging-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-core-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-build-option-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-core-api-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-jvm-services-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-kotlin-dsl-1.0-rc-6.jar" />
-                  <option value="/usr/share/java/gradle/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-6.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-testing-jvm-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-code-quality-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-test-kit-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-tooling-native-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-ide-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-build-cache-http-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-ear-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-scala-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-build-comparison-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-reporting-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-platform-jvm-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-resources-gcs-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-ide-play-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-composite-builds-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-diagnostics-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-ivy-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-signing-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-resources-sftp-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-dependency-management-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-language-native-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-platform-play-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-platform-native-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-build-init-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-language-scala-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-tooling-api-builders-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-announce-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-language-jvm-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-version-control-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-publish-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-resources-http-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-platform-base-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-testing-junit-platform-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-plugins-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-resources-s3-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-osgi-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-language-groovy-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-workers-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-language-java-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-javascript-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-testing-base-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-plugin-development-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-maven-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-antlr-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-jacoco-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-plugin-use-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-testing-native-4.10.2.jar" />
-                  <option value="/usr/share/java/gradle/lib/plugins/gradle-ide-native-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/ant-1.9.11.jar" />
+                  <option value="C:/Gradle/lib/ant-launcher-1.9.11.jar" />
+                  <option value="C:/Gradle/lib/gradle-api-metadata-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-base-services-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-base-services-groovy-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-build-cache-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-build-option-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-cli-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-core-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-core-api-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-docs-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-installation-beacon-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-jvm-services-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-kotlin-dsl-1.0-rc-6.jar" />
+                  <option value="C:/Gradle/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-6.jar" />
+                  <option value="C:/Gradle/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-6.jar" />
+                  <option value="C:/Gradle/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-6.jar" />
+                  <option value="C:/Gradle/lib/gradle-launcher-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-logging-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-messaging-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-model-core-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-model-groovy-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-native-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-persistent-cache-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-process-services-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-resources-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-runtime-api-info-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-tooling-api-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/gradle-wrapper-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/groovy-all-2.4.15.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-announce-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-antlr-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-build-cache-http-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-build-comparison-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-build-init-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-code-quality-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-composite-builds-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-dependency-management-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-diagnostics-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-ear-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-ide-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-ide-native-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-ide-play-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-ivy-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-jacoco-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-javascript-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-language-groovy-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-language-java-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-language-jvm-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-language-native-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-language-scala-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-maven-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-osgi-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-platform-base-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-platform-jvm-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-platform-native-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-platform-play-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-plugin-development-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-plugin-use-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-plugins-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-publish-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-reporting-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-resources-gcs-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-resources-http-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-resources-s3-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-resources-sftp-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-scala-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-signing-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-test-kit-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-testing-base-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-testing-junit-platform-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-testing-jvm-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-testing-native-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-tooling-api-builders-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-tooling-native-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-version-control-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/gradle-workers-4.10.2.jar" />
+                  <option value="C:/Gradle/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -1273,7 +1372,6 @@
         <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/component.xml" />
         <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/config.xml" />
         <option value="$PROJECT_DIR$/petclinic-core/src/resources/application.properties" />
-        <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java" />
         <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/component.xml" />
         <option value="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/OwnerRestController.java" />
         <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/domain/Pet.java" />
@@ -1281,8 +1379,12 @@
         <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/PetComponent.java" />
         <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/JdbcPetDao.java" />
         <option value="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VetRestController.java" />
         <option value="$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VetRestController.java" />
+=======
+        <option value="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -1303,6 +1405,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -1343,6 +1446,8 @@
           <select />
         </subPane>
       </pane>
+=======
+>>>>>>> Stashed changes
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1386,6 +1491,11 @@
             <path>
               <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
               <item name="petcbackend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".vscode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="petcbackend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="petclinic-core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -1408,15 +1518,6 @@
               <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="petclinic" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="petcbackend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="petclinic-core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="petclinic" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="Owner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
@@ -1456,6 +1557,7 @@
             <path>
               <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
               <item name="petcbackend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="petclinic-core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -1492,13 +1594,9 @@
             <path>
               <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
               <item name="petcbackend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+=======
+>>>>>>> Stashed changes
               <item name="petclinic-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="petcbackend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="petclinic-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="petclinic" type="b2602c69:ProjectViewProjectNode" />
@@ -1525,6 +1623,50 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< Updated upstream
+=======
+      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+              <item name="petclinic-web_main" type="cbb8eebc:String" user="petclinic-web_main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+              <item name="petclinic-web_main" type="cbb8eebc:String" user="petclinic-web_main" />
+              <item name="petclinic-web/src" type="cbb8eebc:String" user="petclinic-web/src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+              <item name="petclinic-web_main" type="cbb8eebc:String" user="petclinic-web_main" />
+              <item name="petclinic-web/src" type="cbb8eebc:String" user="petclinic-web/src" />
+              <item name="be/heh/petclinic" type="cbb8eebc:String" user="be/heh/petclinic" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+              <item name="petclinic-web" type="cbb8eebc:String" user="petclinic-web" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1544,7 +1686,12 @@
       <recent name="$PROJECT_DIR$/petclinic-core/test/unit/be/heh/domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< Updated upstream
       <recent name="$PROJECT_DIR$/petclinic-core/src/resources/components" />
+=======
+      <recent name="C:\Users\msido\Documents\cours\dev weeb\petcbackend\petclinic-core\src\resources\components" />
+      <recent name="C:\Users\msido\Documents\cours\dev weeb\petcbackend\petclinic-core\src\resources" />
+>>>>>>> Stashed changes
       <recent name="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component" />
       <recent name="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet" />
       <recent name="$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic" />
@@ -1573,19 +1720,29 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -1597,15 +1754,31 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.PetClinicApplication" />
       <item itemvalue="Application.PetClinicApplication" />
     </list>
     <recent_temporary>
@@ -1646,87 +1819,95 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="-3" y="31" width="1606" height="823" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26962677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="DB Browser" order="7" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993565" weight="0.32899868" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61973333" weight="0.32890365" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4992" weight="0.39977852" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993565" weight="0.32769832" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.53861004" weight="0.40783745" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.46138996" side_tool="true" weight="0.40783745" />
-      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49973333" weight="0.32890365" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32890365" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4993565" weight="0.32769832" />
-      <window_info anchor="bottom" id="DB Execution Console" order="12" />
-      <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Code Iris" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993565" weight="0.32769832" />
+      <window_info id="DB Browser" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+>>>>>>> Stashed changes
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="DB Execution Console" order="12" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.46138996" side_tool="true" weight="0.40783745" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61973333" weight="0.32890365" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32890365" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.53861004" visible="true" weight="0.40753046" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27025586" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4992" weight="0.39977852" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Code Iris" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3296" />
       <window_info anchor="right" id="Database" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4993565" weight="0.32769832" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993565" weight="0.32899868" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49973333" visible="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25868726" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="DB Execution Console" order="12" />
       <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="13" />
       <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61973333" weight="0.32890365" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="DB Browser" order="7" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="DB Browser" order="7" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993565" weight="0.32899868" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61973333" weight="0.32890365" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4992" weight="0.39977852" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993565" weight="0.32769832" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.53861004" visible="true" weight="0.40783745" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.46138996" side_tool="true" visible="true" weight="0.40783745" />
-      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49973333" weight="0.32890365" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32890365" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4993565" weight="0.32769832" />
-      <window_info anchor="bottom" id="DB Execution Console" order="12" />
-      <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.46138996" side_tool="true" visible="true" weight="0.40783745" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993565" weight="0.32769832" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49973333" weight="0.32890365" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32890365" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="right" id="Code Iris" order="6" />
       <window_info anchor="right" id="Gradle" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25868726" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4993565" weight="0.32769832" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3296" />
-      <window_info anchor="right" id="Database" order="11" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993565" weight="0.32899868" />
       <window_info anchor="right" id="Bean Validation" order="12" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4992" weight="0.39977852" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1736,10 +1917,88 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/petclinic-web/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="121" selection-start-line="12" selection-start-column="121" selection-end-line="12" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petclinic-web/gradlew">
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/domain/Pet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/domain/Owner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/OwnerRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/PetRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/PetComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/JdbcPetDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-web/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
@@ -1802,31 +2061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petclinic-web/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/petclinic-core/src/resources/db-migration/sprint_1/sprint_1_master.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetComponentImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1841,21 +2079,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/petclinic-core/test/unit/be/heh/domain/VetTests.java" />
     <entry file="file://$PROJECT_DIR$/petclinic-core/test/unit/be/heh/domain/config.xml" />
-    <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/CorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/petclinic-core/test/unit/be/heh/domain/OwnerTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1863,6 +2091,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/JdbcVetDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1870,6 +2099,12 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/resources/components/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -1881,6 +2116,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/visit/componentvisit.xml" />
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1905,11 +2141,39 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/resources/components/component.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/domain/Pet.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/domain/Owner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/OwnerRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/PetRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="480">
           <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
@@ -1959,19 +2223,62 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetComponent.java">
+    <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/OwnerRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="384">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/PetComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/pet/JdbcPetDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-web/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-web/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/Owner/JdbcOwnerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/domain/Owner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1997,6 +2304,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+=======
+    <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/PetClinicApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VisitsRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-web/src/be/heh/petclinic/web/VetRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/JdbcVetDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetComponentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petclinic-core/src/be/heh/petclinic/component/vet/VetComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
