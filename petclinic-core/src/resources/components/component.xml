@@ -7,4 +7,12 @@
             <constructor-arg name="dataSource" ref="dataSource" />
     </bean>
 
+    <bean id="OwnerComponent" class="be.heh.petclinic.component.Owner.OwnerComponentImpl">
+        <constructor-arg name="datasource" ref="dataSource" />
+    </bean>
+
+    <bean id="VisitsComponent" class="be.heh.petclinic.component.visit.VisitsComponentlmpl">
+        <constructor-arg name="dataSource" ref="dataSource" />
+    </bean>
+
 </beans>

@@ -19,7 +19,7 @@ public class VetRestController {
 	private VetComponent vetComponentImpl;
 
 	@RequestMapping("vets")
-	public ResponseEntity<Collection<Vet>> getVets(@RequestParam(value="specs",required = false,defaultValue = "true") boolean specs) {
+	public ResponseEntity<Collection<Vet>> getVets(@RequestParam(value="specs",required = false,defaultValue = "false") boolean specs) {
 		Collection<Vet> vets = vetComponentImpl.getVets(specs);
 		return vets.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(vets, HttpStatus.OK);
 	}
