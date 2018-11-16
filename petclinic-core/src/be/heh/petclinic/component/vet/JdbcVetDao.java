@@ -25,8 +25,10 @@ public class JdbcVetDao {
     }
 
     public List<Vet> fetchAll(Boolean withSpecialties) {
-        JdbcTemplate select = new JdbcTemplate(dataSource);
-        return select.query((withSpecialties) ? baseSpecialtiesQuery : baseQuery, new VetExtractor());
+        JdbcTemplate template = new JdbcTemplate(dataSource);
+        return (withSpecialties) ?
+                template.query(baseSpecialtiesQuery,new VetExtractor()) :
+                template.query(baseQuery,new VetRowMapper());
     }
 
     public Vet get(Integer id,Boolean withSpecialties) {
