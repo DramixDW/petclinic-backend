@@ -13,26 +13,29 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 import javax.sql.DataSource;
 
 public class JdbcVisitDao {
+
+
     private DataSource dataSource;
     public JdbcVisitDao(DataSource dataSource){
         this.dataSource = dataSource;
     }
 
-    public List<Visits> fetchAll() {
+   public List<Visits> fetchAll() {
         JdbcTemplate select = new JdbcTemplate(dataSource);
-        return select.query("SELECT name,type_id FROM pets", new VisitRowMapper());
+        return select.query("SELECT pet_id,visit_date,description FROM visits", new VisitRowMapper());
     }
 
-    public Visits get(Integer id) {
+    public Visits get(Date visit_date) {
         JdbcTemplate template = new JdbcTemplate(dataSource);
-        String query = "SELECT name,type_id FROM pets WHERE id=?";
+        String query = "SELECT visit_date,description FROM visits WHERE visit_date=?";
 
-        List<Visits> res = template.query(query,new Object[] {id},new VisitRowMapper());
+        List<Visits> res = template.query(query,new Object[] {visit_date},new VisitRowMapper());
 
         if (res.isEmpty()) {
             return null;
@@ -41,10 +44,10 @@ public class JdbcVisitDao {
         }
     }
 
-    public Visits get(String name) {
-        String query = "SELECT name,type_id FROM pets WHERE name=?";
+    public Visits get(String description) {
+        String query = "SELECT visit_date,description FROM visits WHERE description=?";
         JdbcTemplate select = new JdbcTemplate(dataSource);
-        List<Visits> res = select.query(query,new Object[] {name},new VisitRowMapper());
+        List<Visits> res = select.query(query,new Object[] {description},new VisitRowMapper());
 
         if (res.isEmpty()) {
             return null;
@@ -52,4 +55,21 @@ public class JdbcVisitDao {
             return res.get(0);
         }
     }
+
+    public List<Visits> get(int pet_id) {
+        JdbcTemplate template = new JdbcTemplate(dataSource);
+        String query = "SELECT pet_id,visit_date,description FROM visits WHERE pet_id=?";
+
+        List<Visits> res = template.query(query,new Object[] {pet_id},new VisitRowMapper());
+
+        if (res.isEmpty()) {
+            return null;
+        }else{
+            return res;
+        }
+    }
+
+
+
+
 }

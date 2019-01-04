@@ -1,36 +1,52 @@
 package be.heh.petclinic.domain;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Pet {
-    private int id;
+    private Integer id;
     private String name;
-    private String type;
-    private String owner_firstName;
-    private String owner_lastName;
-    private Date  birthDate;
+    private Date birth_date;
+    private Integer type_id;
+    private Integer owner_id;
 
-    public int getId() { return id; }
+    public Integer getId() {
+        return id;
+    }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 
-    public void setName(String name) { this.name = name; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getType() { return type; }
+    public Date getBirthDate() {
+        return birth_date;
+    }
 
-    public void setType(String type) { this.type = type; }
+    public void setBirthDate(Date birth_date) {
+        this.birth_date = birth_date;
+    }
 
-    public String getOwner_firstName() { return owner_firstName; }
+    public Integer getTypeId() {
+        return type_id;
+    }
 
-    public void setOwner_firstName(String owner_firstName) { this.owner_firstName = owner_firstName; }
+    public void setTypeId(Integer type_id) {
+        this.type_id = type_id;
+    }
 
-    public String getOwner_lastname() { return owner_lastName; }
+    public Integer getOwner_id() {
+        return owner_id;
+    }
 
-    public void setOwner_lastname(String owner_lastname) { this.owner_lastName = owner_lastname; }
-
-    public Date getBirthDate() { return birthDate; }
-
-    public void setBirthDate(Date birthDate) { this.birthDate = birthDate; }
+    public void setOwner_id(Integer owner_id) {
+        this.owner_id = owner_id;
+    }
 }
+

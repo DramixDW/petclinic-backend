@@ -8,5 +8,6 @@ public interface OwnerComponent {
         Owner getOwner(String lastName);
         List<Owner> getOwnerLike(String lastName);
         List<Owner> fetchAll();
-        void addOwner(Owner owner);
+        Boolean editOwner(Owner owner);
+        Boolean addOwner(Owner owner);
 }

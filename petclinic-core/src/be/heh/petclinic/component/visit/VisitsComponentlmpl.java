@@ -1,6 +1,7 @@
 package be.heh.petclinic.component.visit;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Collection;
 
@@ -21,13 +22,18 @@ public class VisitsComponentlmpl implements VisitsComponent {
     }
 
     @Override
-    public Visits getVisits(String petname) {
-        return visitDao.get(petname);
+    public Visits getVisits(Date visit_date) {
+        return visitDao.get(visit_date);
     }
 
     @Override
-    public Visits getVisits(Integer type_id) {
-        return visitDao.get(type_id);
+    public Visits getVisits(String description) {
+        return visitDao.get(description);
+    }
+
+   @Override
+    public List<Visits> getVisits(Integer pet_id) {
+        return visitDao.get(pet_id);
     }
 
 }

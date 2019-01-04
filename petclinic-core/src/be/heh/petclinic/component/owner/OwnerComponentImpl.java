@@ -28,7 +28,12 @@ public class OwnerComponentImpl implements OwnerComponent {
     }
 
     @Override
-    public void addOwner(Owner owner) {
-        ownDao.add(owner);
+    public Boolean editOwner(Owner owner) {
+        return ownDao.edit(owner);
+    }
+
+    @Override
+    public Boolean addOwner(Owner owner) {
+        return ownDao.add(owner);
     }
 }

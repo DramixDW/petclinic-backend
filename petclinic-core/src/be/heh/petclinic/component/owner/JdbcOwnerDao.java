@@ -1,8 +1,13 @@
 package be.heh.petclinic.component.owner;
 
 import be.heh.petclinic.domain.Owner;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCallback;
+
 import javax.sql.DataSource;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 
 public class JdbcOwnerDao {
@@ -38,10 +43,32 @@ public class JdbcOwnerDao {
         }
     }
 
-    public void add(Owner owner)
+    public Boolean add(Owner owner)
     {
         String query = "INSERT INTO owners (first_name,last_name,address,city,telephone) VALUES (?,?,?,?,?)";
         JdbcTemplate add = new JdbcTemplate(datasource);
-        add.update(query, owner.getFirstname(),owner.getLastname(),owner.getAddres(),owner.getCity(),owner.getTelephone());
+        return add.execute(query, (PreparedStatementCallback<Boolean>) ps -> {
+            ps.setString(1,owner.getFirstname());
+            ps.setString(2,owner.getLastname());
+            ps.setString(3,owner.getAddres());
+            ps.setString(4,owner.getCity());
+            ps.setString(5,owner.getTelephone());
+            return ps.executeUpdate() != 0;
+        });
+    }
+
+    public Boolean edit(Owner owner)
+    {
+        String query = "UPDATE owners SET first_name = ?,last_name = ?,address = ?,city = ?,telephone = ? WHERE id= ?";
+        JdbcTemplate edit = new JdbcTemplate(datasource);
+        return edit.execute(query, (PreparedStatementCallback<Boolean>) ps -> {
+            ps.setString(1,owner.getFirstname());
+            ps.setString(2,owner.getLastname());
+            ps.setString(3,owner.getAddres());
+            ps.setString(4,owner.getCity());
+            ps.setString(5,owner.getTelephone());
+            ps.setInt(6,owner.getId());
+            return ps.executeUpdate() != 0;
+        });
     }
 }
