@@ -1,6 +1,5 @@
-package be.heh.petclinic.component.Owner;
+package be.heh.petclinic.component.owner;
 
-import be.heh.petclinic.domain.Vet;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

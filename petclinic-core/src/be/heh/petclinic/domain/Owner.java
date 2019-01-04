@@ -57,4 +57,16 @@ public class Owner {
         return this.id;
     }
 
+
+    @Override
+    public String toString() {
+        return "Owner{" +
+                "lastname='" + lastname + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", address='" + address + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", city='" + city + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }
