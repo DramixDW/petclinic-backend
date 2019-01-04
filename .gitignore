@@ -1,0 +1,8 @@
+/*
+!.gitignore
+!build.gradle
+!settings.gradle
+!petclinic-core/**.gradle
+!petclinic-core/src/*
+!petclinic-web/src/*
+!petclinic-web/**.gradle
