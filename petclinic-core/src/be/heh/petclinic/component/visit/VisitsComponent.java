@@ -13,5 +13,4 @@ public interface VisitsComponent {
     Visits getVisits(Date visit_date);
     Visits getVisits(String description);
     List<Visits> getVisits(Integer pet_id);
-
 }

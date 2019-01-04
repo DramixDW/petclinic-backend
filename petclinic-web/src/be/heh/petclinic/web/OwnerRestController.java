@@ -15,13 +15,13 @@ public class OwnerRestController {
     @Autowired
     private OwnerComponent OwnerComponent;
 
-    @RequestMapping("ownerByName")
+    @RequestMapping("getOwnerByName")
     public ResponseEntity<Owner> getOwnerByName(@RequestParam(value="name") String name){
         Owner own = OwnerComponent.getOwner(name);
         return own == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(own,HttpStatus.OK);
     }
 
-    @RequestMapping("ownerLike")
+    @RequestMapping("getOwnerByNameLike")
     public ResponseEntity<List<Owner>> getOwnerLike(@RequestParam(value="name") String name){
         List<Owner> own = OwnerComponent.getOwnerLike(name);
         return own == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(own,HttpStatus.OK);
