@@ -9,8 +9,10 @@ import java.util.Collection;
 
 public interface PetComponent{
     Collection<Pet> getPets();
-    Pet getPet(String name);
-    Pet getPet(Integer pet_id);
+    Pet getPetWithVisits(String name);
+    Pet getPetWithVisits(Integer pet_id);
+    Pet getPetWithVisitsByOwnerId(Integer owner_id);
+    Pet getPetById(Integer pet_id);
     Boolean editPet(Pet pet);
     Boolean addPet(Pet pet);
 }

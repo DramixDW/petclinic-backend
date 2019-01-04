@@ -1,12 +1,15 @@
 package be.heh.petclinic.component.pet;
 
 import be.heh.petclinic.component.pet.PetRowMapper;
+import be.heh.petclinic.component.visit.VisitRowMapper;
 import be.heh.petclinic.domain.Pet;
+import be.heh.petclinic.domain.Visit;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 
 import org.springframework.jdbc.core.PreparedStatementCallback;
+import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.io.Console;
@@ -14,6 +17,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -29,19 +33,35 @@ public class JdbcPetDao {
 
     public List<Pet> fetchAll() {
         JdbcTemplate select = new JdbcTemplate(dataSource);
-        return select.query("SELECT pets.id ,pets.name, pets.birth_date, types.name, CONCAT(owners.first_name, \" \", owners.last_name) AS owner from pets INNER JOIN types ON type_id=types.id INNER JOIN owners ON owner_id=owners.id",new PetRowMapper());
+        return select.query(
+                "SELECT pets.id ,pets.name, pets.type_id , pets.owner_id , pets.birth_date, types.name from pets INNER JOIN types ON type_id=types.id",
+                new PetRowMapper()
+        );
     }
 
-    public Pet get(String name) {
-        String query = "SELECT type from types UNION SELECT name FROM pets WHERE name=?";
-        JdbcTemplate select = new JdbcTemplate(dataSource);
-        List<Pet> res = select.query(query, new Object[]{name}, new PetRowMapper());
+    public Pet getWithVisitsBy(String whereField,Object fieldValue) {
+        String query = "SELECT * FROM pets " +
+                "LEFT JOIN visits ON pet_id=pets.id " +
+                "INNER JOIN types ON type_id=types.id WHERE " + whereField + " = ?";
 
-        if (res.isEmpty()) {
-            return null;
-        } else {
-            return res.get(0);
-        }
+        JdbcTemplate select = new JdbcTemplate(dataSource);
+
+        Pet res = select.query(query, new Object[]{fieldValue}, rs -> {
+            Pet pet = null;
+            while(rs.next()) {
+                if (pet == null) {
+                    pet = new PetRowMapper().mapRow(rs, -1);
+                    pet.setVisits(new ArrayList<>());
+                }
+
+                Visit visit = new VisitRowMapper().mapRow(rs,-1);
+                if (visit != null)
+                    pet.addVisit(visit);
+            }
+            return pet;
+        });
+
+        return res;
     }
 
     public Boolean add(Pet pet)
@@ -80,19 +100,6 @@ public class JdbcPetDao {
                 "WHERE pets.id=?";
 
         List<Pet> res = template.query(query,new Object[] {pet_id},new PetRowMapper());
-
-        if (res.isEmpty()) {
-            return null;
-        }else{
-            return res.get(0);
-        }
-    }
-
-    public Pet getPets(String name) {
-        JdbcTemplate template = new JdbcTemplate(dataSource);
-        String query = "SELECT name FROM pets UNION SELECT name from types WHERE name=?";
-
-        List<Pet> res = template.query(query,new Object[] {name},new PetRowMapper());
 
         if (res.isEmpty()) {
             return null;

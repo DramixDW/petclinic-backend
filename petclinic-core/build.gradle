@@ -26,6 +26,7 @@ repositories {
 dependencies {
 
     compile("org.springframework.boot:spring-boot-starter:2.0.6.RELEASE")
+
     // Use MySQL Connector-J
     runtime 'mysql:mysql-connector-java:8.0.12'
 

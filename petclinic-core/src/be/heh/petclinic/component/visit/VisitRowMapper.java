@@ -1,18 +1,24 @@
 package be.heh.petclinic.component.visit;
 
-import be.heh.petclinic.domain.Vet;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.SQLException;
 import java.sql.ResultSet;
 
-import be.heh.petclinic.domain.Visits;
-public class VisitRowMapper implements RowMapper<Visits>{
+import be.heh.petclinic.domain.Visit;
+public class VisitRowMapper implements RowMapper<Visit>{
     @Override
-    public Visits mapRow(ResultSet rs, int i) throws SQLException {
-        Visits visits = new Visits();
-        visits.setVisit_date(rs.getDate("visit_date"));
-        visits.setDescription(rs.getString("description"));
-       visits.setPet_id(rs.getInt("pet_id"));
-        return visits;
+    public Visit mapRow(ResultSet rs, int i) throws SQLException {
+        Visit visit = new Visit();
+
+        //check primary key , if it was NULL , return null
+        visit.setId(rs.getInt("visits.id"));
+
+        if (rs.wasNull())
+            return null;
+
+        visit.setDescription(rs.getString("visits.description"));
+        visit.setPet_id(rs.getInt("visits.pet_id"));
+        visit.setVisit_date(rs.getDate("visits.visit_date"));
+        return visit;
     }
 }

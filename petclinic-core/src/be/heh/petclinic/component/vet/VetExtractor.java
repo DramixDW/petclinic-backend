@@ -28,7 +28,6 @@ public class VetExtractor implements ResultSetExtractor<List<Vet>> {
                 map.put(id, vet);
             }
 
-
             vet.addSpecialty(new Specialty(rs.getString("specialties.name"),rs.getInt("specialties.id")));
         }
         return new ArrayList<>(map.values());

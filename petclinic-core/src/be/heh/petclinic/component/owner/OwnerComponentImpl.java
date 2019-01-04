@@ -14,7 +14,7 @@ public class OwnerComponentImpl implements OwnerComponent {
 
     @Override
     public Owner getOwner(String lastname){
-        return ownDao.get(lastname);
+        return ownDao.getBy("owners.last_name",lastname);
     }
 
     @Override

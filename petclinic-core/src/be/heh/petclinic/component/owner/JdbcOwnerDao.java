@@ -31,10 +31,10 @@ public class JdbcOwnerDao {
         return select.query(query,new Object[] {last_name + "%"},new OwnerRowMapper());
     }
 
-    public Owner get(String last_name) {
-        String query = "SELECT * FROM owners WHERE last_name=?";
+    public Owner getBy(String whereField,Object fieldValue) {
+        String query = "SELECT * FROM owners WHERE " + whereField + " = ?";
         JdbcTemplate select = new JdbcTemplate(datasource);
-        List<Owner> res = select.query(query,new Object[] {last_name},new OwnerRowMapper());
+        List<Owner> res = select.query(query,new Object[] {fieldValue},new OwnerRowMapper());
 
         if (res.isEmpty()) {
             return null;

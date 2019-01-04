@@ -1,18 +1,9 @@
 package be.heh.petclinic.component.visit;
 
-import be.heh.petclinic.component.vet.VetRowMapper;
-import be.heh.petclinic.domain.Visits;
-import org.springframework.dao.DataAccessException;
+import be.heh.petclinic.domain.Visit;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 
-import be.heh.petclinic.domain.Vet;
-import org.springframework.jdbc.core.PreparedStatementCallback;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -26,16 +17,16 @@ public class JdbcVisitDao {
         this.dataSource = dataSource;
     }
 
-   public List<Visits> fetchAll() {
+   public List<Visit> fetchAll() {
         JdbcTemplate select = new JdbcTemplate(dataSource);
         return select.query("SELECT pet_id,visit_date,description FROM visits", new VisitRowMapper());
     }
 
-    public Visits get(Date visit_date) {
+    public Visit get(Date visit_date) {
         JdbcTemplate template = new JdbcTemplate(dataSource);
         String query = "SELECT visit_date,description FROM visits WHERE visit_date=?";
 
-        List<Visits> res = template.query(query,new Object[] {visit_date},new VisitRowMapper());
+        List<Visit> res = template.query(query,new Object[] {visit_date},new VisitRowMapper());
 
         if (res.isEmpty()) {
             return null;
@@ -44,10 +35,10 @@ public class JdbcVisitDao {
         }
     }
 
-    public Visits get(String description) {
+    public Visit get(String description) {
         String query = "SELECT visit_date,description FROM visits WHERE description=?";
         JdbcTemplate select = new JdbcTemplate(dataSource);
-        List<Visits> res = select.query(query,new Object[] {description},new VisitRowMapper());
+        List<Visit> res = select.query(query,new Object[] {description},new VisitRowMapper());
 
         if (res.isEmpty()) {
             return null;
@@ -56,11 +47,11 @@ public class JdbcVisitDao {
         }
     }
 
-    public List<Visits> get(int pet_id) {
+    public List<Visit> get(int pet_id) {
         JdbcTemplate template = new JdbcTemplate(dataSource);
         String query = "SELECT pet_id,visit_date,description FROM visits WHERE pet_id=?";
 
-        List<Visits> res = template.query(query,new Object[] {pet_id},new VisitRowMapper());
+        List<Visit> res = template.query(query,new Object[] {pet_id},new VisitRowMapper());
 
         if (res.isEmpty()) {
             return null;
