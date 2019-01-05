@@ -1,5 +1,8 @@
 package be.heh.petclinic.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Owner {
 
     private String lastname;
@@ -7,7 +10,22 @@ public class Owner {
     private String address;
     private String telephone;
     private String city;
-    private int id;
+    private List<Pet> pets;
+    private Integer id;
+
+    public List<Pet> getPets() {
+        return pets;
+    }
+
+    public void setPets(List<Pet> pets) {
+        this.pets = pets;
+    }
+
+    public void addPet(Pet pet) {
+        if (pets == null)
+            pets = new ArrayList<>();
+        this.pets.add(pet);
+    }
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
@@ -29,7 +47,7 @@ public class Owner {
         this.telephone = telephone;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -53,7 +71,7 @@ public class Owner {
         return this.address;
     }
 
-    public int getId() {
+    public Integer getId() {
         return this.id;
     }
 

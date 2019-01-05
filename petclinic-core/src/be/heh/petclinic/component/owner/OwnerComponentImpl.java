@@ -2,6 +2,7 @@ package be.heh.petclinic.component.owner;
 
 import be.heh.petclinic.domain.Owner;
 import javax.sql.DataSource;
+import java.util.Collection;
 import java.util.List;
 
 public class OwnerComponentImpl implements OwnerComponent {
@@ -18,8 +19,8 @@ public class OwnerComponentImpl implements OwnerComponent {
     }
 
     @Override
-    public List<Owner> getOwnerLike(String lastName) {
-        return ownDao.getLike(lastName);
+    public Collection<Owner> getOwnerLike(String lastName) {
+        return ownDao.getWithPetsByName(lastName);
     }
 
     @Override

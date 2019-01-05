@@ -18,14 +18,8 @@ public class VetRestController {
 	private VetComponent vetComponentImpl;
 
 	@RequestMapping("getVets")
-	public ResponseEntity<Collection<Vet>> getVets(@RequestParam(value="specs",required = false,defaultValue = "false") boolean specs) {
-		Collection<Vet> vets = vetComponentImpl.getVets(specs);
+	public ResponseEntity<Collection<Vet>> getVets() {
+		Collection<Vet> vets = vetComponentImpl.getVets();
 		return vets.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(vets, HttpStatus.OK);
-	}
-
-	@RequestMapping("getVet")
-	public ResponseEntity<Vet> getVetByName(@RequestParam(value="name") String name){
-		Vet vet = vetComponentImpl.getVet(name);
-		return vet == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(vet,HttpStatus.OK);
 	}
 }

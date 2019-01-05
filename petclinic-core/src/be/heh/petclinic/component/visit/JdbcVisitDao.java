@@ -2,6 +2,7 @@ package be.heh.petclinic.component.visit;
 
 import be.heh.petclinic.domain.Visit;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCallback;
 
 
 import java.util.Date;
@@ -11,7 +12,6 @@ import javax.sql.DataSource;
 
 public class JdbcVisitDao {
 
-
     private DataSource dataSource;
     public JdbcVisitDao(DataSource dataSource){
         this.dataSource = dataSource;
@@ -19,37 +19,12 @@ public class JdbcVisitDao {
 
    public List<Visit> fetchAll() {
         JdbcTemplate select = new JdbcTemplate(dataSource);
-        return select.query("SELECT pet_id,visit_date,description FROM visits", new VisitRowMapper());
+        return select.query("SELECT * FROM visits", new VisitRowMapper());
     }
 
-    public Visit get(Date visit_date) {
+    public List<Visit> get(Integer pet_id) {
         JdbcTemplate template = new JdbcTemplate(dataSource);
-        String query = "SELECT visit_date,description FROM visits WHERE visit_date=?";
-
-        List<Visit> res = template.query(query,new Object[] {visit_date},new VisitRowMapper());
-
-        if (res.isEmpty()) {
-            return null;
-        }else{
-            return res.get(0);
-        }
-    }
-
-    public Visit get(String description) {
-        String query = "SELECT visit_date,description FROM visits WHERE description=?";
-        JdbcTemplate select = new JdbcTemplate(dataSource);
-        List<Visit> res = select.query(query,new Object[] {description},new VisitRowMapper());
-
-        if (res.isEmpty()) {
-            return null;
-        }else{
-            return res.get(0);
-        }
-    }
-
-    public List<Visit> get(int pet_id) {
-        JdbcTemplate template = new JdbcTemplate(dataSource);
-        String query = "SELECT pet_id,visit_date,description FROM visits WHERE pet_id=?";
+        String query = "SELECT * FROM visits WHERE visits.pet_id=?";
 
         List<Visit> res = template.query(query,new Object[] {pet_id},new VisitRowMapper());
 
@@ -60,7 +35,15 @@ public class JdbcVisitDao {
         }
     }
 
-
-
-
+    public Boolean add(Visit visit)
+    {
+        String query = "INSERT INTO visits (pet_id,visit_date,description) VALUES (?,?,?)";
+        JdbcTemplate add = new JdbcTemplate(dataSource);
+        return add.execute(query, (PreparedStatementCallback<Boolean>) ps -> {
+            ps.setInt(1,visit.getpet_id());
+            ps.setDate(2,visit.getVisit_date());
+            ps.setString(3,visit.getDescription());
+            return ps.executeUpdate() != 0;
+        });
+    }
 }

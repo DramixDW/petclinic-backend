@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
 import java.util.List;
 
 @RestController
@@ -22,9 +23,9 @@ public class OwnerRestController {
     }
 
     @RequestMapping("getOwnerByNameLike")
-    public ResponseEntity<List<Owner>> getOwnerLike(@RequestParam(value="name") String name){
-        List<Owner> own = OwnerComponent.getOwnerLike(name);
-        return own == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(own,HttpStatus.OK);
+    public ResponseEntity<Collection<Owner>> getOwnerLike(@RequestParam(value="name") String name){
+        Collection<Owner> own = OwnerComponent.getOwnerLike(name);
+        return own.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(own,HttpStatus.OK);
     }
 
     @RequestMapping(value = "addOwner", method = RequestMethod.POST,consumes="application/json")

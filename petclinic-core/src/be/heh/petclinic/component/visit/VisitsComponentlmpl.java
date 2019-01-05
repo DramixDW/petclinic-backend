@@ -18,19 +18,13 @@ public class VisitsComponentlmpl implements VisitsComponent {
         return visitDao.fetchAll();
     }
 
-    @Override
-    public Visit getVisits(Date visit_date) {
-        return visitDao.get(visit_date);
-    }
-
-    @Override
-    public Visit getVisits(String description) {
-        return visitDao.get(description);
-    }
-
    @Override
     public List<Visit> getVisits(Integer pet_id) {
         return visitDao.get(pet_id);
     }
 
+    @Override
+    public Boolean addVisit(Visit visit) {
+        return visitDao.add(visit);
+    }
 }

@@ -1,5 +1,6 @@
 package be.heh.petclinic.component.pet;
 
+import be.heh.petclinic.component.owner.OwnerRowMapper;
 import be.heh.petclinic.component.pet.PetRowMapper;
 import be.heh.petclinic.component.visit.VisitRowMapper;
 import be.heh.petclinic.domain.Pet;
@@ -34,7 +35,7 @@ public class JdbcPetDao {
     public List<Pet> fetchAll() {
         JdbcTemplate select = new JdbcTemplate(dataSource);
         return select.query(
-                "SELECT pets.id ,pets.name, pets.type_id , pets.owner_id , pets.birth_date, types.name from pets INNER JOIN types ON type_id=types.id",
+                "SELECT * from pets INNER JOIN types ON type_id=types.id",
                 new PetRowMapper()
         );
     }
@@ -73,7 +74,7 @@ public class JdbcPetDao {
             ps.setDate(2,pet.getBirthDate());
             ps.setInt(3,pet.getTypeId());
             ps.setInt(4,pet.getOwner_id());
-            return ps.execute();
+            return ps.executeUpdate() != 0;
         });
     }
 
@@ -87,19 +88,26 @@ public class JdbcPetDao {
             ps.setInt(3,pet.getTypeId());
             ps.setInt(4,pet.getOwner_id());
             ps.setInt(5,pet.getId());
-            return ps.execute();
+            return ps.executeUpdate() != 0;
         });
     }
 
     public Pet getPetById(Integer pet_id) {
         JdbcTemplate template = new JdbcTemplate(dataSource);
         String query =
-                "SELECT pets.name, pets.id , pets.birth_date, types.name, CONCAT(owners.first_name, \" \", owners.last_name) AS owner FROM pets " +
+                "SELECT * FROM pets " +
                 "INNER JOIN types ON type_id=types.id " +
                 "INNER JOIN owners ON owner_id=owners.id " +
                 "WHERE pets.id=?";
 
-        List<Pet> res = template.query(query,new Object[] {pet_id},new PetRowMapper());
+        List<Pet> res = template.query(query, new Object[]{pet_id}, new RowMapper<Pet>() {
+            @Override
+            public Pet mapRow(ResultSet rs, int rowNum) throws SQLException {
+                Pet pet = new PetRowMapper().mapRow(rs,rowNum);
+                pet.setOwner(new OwnerRowMapper().mapRow(rs,rowNum));
+                return pet;
+            }
+        });
 
         if (res.isEmpty()) {
             return null;

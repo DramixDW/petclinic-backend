@@ -20,6 +20,7 @@ public class PetRowMapper implements RowMapper<Pet> {
         pet.setTypeId(rs.getInt("pets.type_id"));
         pet.setOwner_id(rs.getInt("pets.owner_id"));
         pet.setTypeName(rs.getString("types.name"));
+
         return pet;
     }
 }

@@ -4,14 +4,20 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Vet {
-
+    private Integer id;
     private String lastname;
     private String firstname;
     private Collection<Specialty> specialties = new ArrayList<>();
 
-    public Vet(String lastname, String firstname) {
-        this.lastname = lastname;
-        this.firstname = firstname;
+    public Vet() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public void setLastname(String lastname){

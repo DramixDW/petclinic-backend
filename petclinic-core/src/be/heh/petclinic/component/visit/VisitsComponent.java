@@ -10,7 +10,6 @@ import java.util.Collection;
 
 public interface VisitsComponent {
     Collection<Visit> getVisits();
-    Visit getVisits(Date visit_date);
-    Visit getVisits(String description);
     List<Visit> getVisits(Integer pet_id);
+    Boolean addVisit(Visit visit);
 }

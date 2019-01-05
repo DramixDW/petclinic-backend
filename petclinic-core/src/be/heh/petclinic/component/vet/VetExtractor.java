@@ -8,28 +8,30 @@ import org.springframework.jdbc.core.ResultSetExtractor;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class VetExtractor implements ResultSetExtractor<List<Vet>> {
+public class VetExtractor implements ResultSetExtractor<Collection<Vet>> {
     @Override
-    public List<Vet> extractData(ResultSet rs) throws SQLException, DataAccessException {
-        Map<Integer, Vet> map = new HashMap<>();
-        Vet vet;
+    public Collection<Vet> extractData(ResultSet rs) throws SQLException, DataAccessException {
+        HashMap<Integer,Vet> vetsMap = new HashMap<>();
 
-        while (rs.next()) {
-            Integer id = rs.getInt("vets.id");
-            vet = map.get(id);
+        while(rs.next()) {
+            Integer vetId = rs.getInt("vets.id");
 
-            if(vet == null){
-                vet = new Vet(rs.getString("vets.first_name"),rs.getString("vets.last_name"));
-                map.put(id, vet);
+            if(!vetsMap.containsKey(vetId))
+            {
+                Vet newVet = new VetRowMapper().mapRow(rs, -1);
+                newVet.setSpecialties(new ArrayList<>());
+                vetsMap.put(vetId,newVet);
             }
 
-            vet.addSpecialty(new Specialty(rs.getString("specialties.name"),rs.getInt("specialties.id")));
+            Integer specId = rs.getInt("specialties.id");
+            if (!rs.wasNull()) {
+                Specialty spec = new Specialty(rs.getString("specialties.name"),specId);
+                vetsMap.get(vetId).addSpecialty(spec);
+            }
         }
-        return new ArrayList<>(map.values());
+
+        return vetsMap.values();
     }
 }

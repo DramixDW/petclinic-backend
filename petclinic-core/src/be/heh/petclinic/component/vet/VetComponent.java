@@ -7,7 +7,5 @@ import java.util.List;
 import java.util.Collection;
 
 public interface VetComponent{
-    Collection<Vet> getVets(Boolean withSpecs);
-    Vet getVet(String lastName);
-    Vet getVet(Integer id);
+    Collection<Vet> getVets();
 }

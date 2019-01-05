@@ -11,7 +11,10 @@ import java.sql.SQLException;
 public class VetRowMapper implements RowMapper<Vet> {
     @Override
     public Vet mapRow(ResultSet rs, int rowNum) throws SQLException {
-        ResultSetMetaData data = rs.getMetaData();
-        return new Vet(rs.getString("last_name"),rs.getString("first_name"));
+        Vet vet = new Vet();
+        vet.setLastname(rs.getString("vets.last_name"));
+        vet.setFirstname(rs.getString("vets.first_name"));
+        vet.setId(rs.getInt("vets.id"));
+        return vet;
     }
 }

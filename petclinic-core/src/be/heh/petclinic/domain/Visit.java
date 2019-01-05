@@ -1,6 +1,6 @@
 package be.heh.petclinic.domain;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Visit {
     private Date visit_date;
