@@ -19,13 +19,13 @@ public class VisitsRestController {
     @RequestMapping("getVisits")
     public ResponseEntity<Collection<Visit>> getVisits() {
         Collection<Visit> visits = visitsComponentlmpl.getVisits();
-        return visits.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(visits, HttpStatus.OK);
+        return new ResponseEntity<>(visits, HttpStatus.OK);
     }
 
     @RequestMapping("getVisitByPetId")
     public ResponseEntity<List<Visit>> getVisits(@RequestParam(value="pet_id")Integer pet_id){
         List<Visit> visits = visitsComponentlmpl.getVisits(pet_id);
-        return visits.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(visits,HttpStatus.OK);
+        return new ResponseEntity<>(visits,HttpStatus.OK);
     }
 
     @RequestMapping(value = "addVisit", method = RequestMethod.POST,consumes="application/json")

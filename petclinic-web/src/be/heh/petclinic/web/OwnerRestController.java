@@ -25,7 +25,7 @@ public class OwnerRestController {
     @RequestMapping("getOwnerByNameLike")
     public ResponseEntity<Collection<Owner>> getOwnerLike(@RequestParam(value="name") String name){
         Collection<Owner> own = OwnerComponent.getOwnerLike(name);
-        return own.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(own,HttpStatus.OK);
+        return new ResponseEntity<>(own,HttpStatus.OK);
     }
 
     @RequestMapping(value = "addOwner", method = RequestMethod.POST,consumes="application/json")

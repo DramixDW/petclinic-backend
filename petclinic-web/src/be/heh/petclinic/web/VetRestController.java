@@ -20,6 +20,6 @@ public class VetRestController {
 	@RequestMapping("getVets")
 	public ResponseEntity<Collection<Vet>> getVets() {
 		Collection<Vet> vets = vetComponentImpl.getVets();
-		return vets.isEmpty() ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(vets, HttpStatus.OK);
+		return new ResponseEntity<>(vets, HttpStatus.OK);
 	}
 }

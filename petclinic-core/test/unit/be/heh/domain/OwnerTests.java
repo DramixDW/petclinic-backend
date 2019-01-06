@@ -9,7 +9,6 @@ public class OwnerTests {
       OwnerComponentImpl ownImp = new OwnerComponentImpl(dataSource);
       owner own = ownImp.getOwner("Harold");
       assertEquals("Harold",own.getFirstname());
-
   }
   */
 }
