@@ -45,7 +45,7 @@ public class JdbcOwnerDao {
     public Collection<Owner> getWithPetsByName(String name) {
         String query = "SELECT * FROM owners " +
                 "LEFT JOIN pets ON owners.id=pets.owner_id " +
-                "INNER JOIN types ON type_id=types.id " +
+                "LEFT JOIN types ON type_id=types.id " +
                 "WHERE owners.last_name LIKE ? OR pets.name LIKE ?";
 
         JdbcTemplate select = new JdbcTemplate(datasource);
