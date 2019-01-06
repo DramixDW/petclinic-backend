@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface OwnerComponent {
         Owner getOwner(String lastName);
+        Owner getOwner(Integer id);
         Collection<Owner> getOwnerLike(String lastName);
         List<Owner> fetchAll();
         Boolean editOwner(Owner owner);

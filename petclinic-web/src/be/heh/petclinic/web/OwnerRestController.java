@@ -22,6 +22,12 @@ public class OwnerRestController {
         return own == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(own,HttpStatus.OK);
     }
 
+    @RequestMapping("getOwnerById")
+    public ResponseEntity<Owner> getOwnerById(@RequestParam(value="id") Integer id){
+        Owner own = OwnerComponent.getOwner(id);
+        return own == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(own,HttpStatus.OK);
+    }
+
     @RequestMapping("getOwnerByNameLike")
     public ResponseEntity<Collection<Owner>> getOwnerLike(@RequestParam(value="name") String name){
         Collection<Owner> own = OwnerComponent.getOwnerLike(name);

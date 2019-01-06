@@ -19,6 +19,11 @@ public class OwnerComponentImpl implements OwnerComponent {
     }
 
     @Override
+    public Owner getOwner(Integer id){
+        return ownDao.getBy("owners.id",id);
+    }
+
+    @Override
     public Collection<Owner> getOwnerLike(String lastName) {
         return ownDao.getWithPetsByName(lastName);
     }
