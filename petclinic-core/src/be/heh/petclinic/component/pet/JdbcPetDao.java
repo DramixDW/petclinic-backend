@@ -105,15 +105,13 @@ public class JdbcPetDao {
         JdbcTemplate template = new JdbcTemplate(dataSource);
         String query =
                 "SELECT * FROM pets " +
-                "LEFT JOIN types ON type_id=types.id " +
-                "LEFT JOIN owners ON owner_id=owners.id " +
+                "INNER JOIN types ON type_id=types.id " +
                 "WHERE pets.id=?";
 
         List<Pet> res = template.query(query, new Object[]{pet_id}, new RowMapper<Pet>() {
             @Override
             public Pet mapRow(ResultSet rs, int rowNum) throws SQLException {
                 Pet pet = new PetRowMapper().mapRow(rs,rowNum);
-                pet.setOwner(new OwnerRowMapper().mapRow(rs,rowNum));
                 return pet;
             }
         });
