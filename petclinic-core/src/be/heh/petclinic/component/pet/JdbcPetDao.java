@@ -106,21 +106,34 @@ public class JdbcPetDao {
         String query =
                 "SELECT * FROM pets " +
                 "INNER JOIN types ON type_id=types.id " +
+                "LEFT JOIN visits on pets.id=visits.pet_id" +
                 "WHERE pets.id=?";
 
-        List<Pet> res = template.query(query, new Object[]{pet_id}, new RowMapper<Pet>() {
+        Pet res = template.query(query, new Object[]{pet_id}, new ResultSetExtractor<Pet>() {
             @Override
-            public Pet mapRow(ResultSet rs, int rowNum) throws SQLException {
-                Pet pet = new PetRowMapper().mapRow(rs,rowNum);
+            public Pet extractData(ResultSet rs) throws SQLException, DataAccessException {
+                Pet pet = null;
+
+                while (rs.next())
+                {
+                    if (pet == null) {
+                        pet = new PetRowMapper().mapRow(rs, -1);
+                        pet.setVisits(new ArrayList<>());
+                    }
+
+                    rs.getInt("visits.id");
+
+                    if (!rs.wasNull())
+                    {
+                        pet.addVisit(new VisitRowMapper().mapRow(rs,-1));
+                    }
+                }
+
                 return pet;
             }
         });
 
-        if (res.isEmpty()) {
-            return null;
-        }else{
-            return res.get(0);
-        }
+        return res;
     }
 }
 
