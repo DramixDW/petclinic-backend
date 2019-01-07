@@ -106,7 +106,8 @@ public class JdbcPetDao {
         String query =
                 "SELECT * FROM pets " +
                 "INNER JOIN types ON type_id=types.id " +
-                "LEFT JOIN visits on pets.id=visits.pet_id" +
+                "LEFT JOIN visits on pets.id=visits.pet_id " +
+                "INNER JOIN owners on pets.id=owners.pet_id "+
                 "WHERE pets.id=?";
 
         Pet res = template.query(query, new Object[]{pet_id}, new ResultSetExtractor<Pet>() {
@@ -119,6 +120,7 @@ public class JdbcPetDao {
                     if (pet == null) {
                         pet = new PetRowMapper().mapRow(rs, -1);
                         pet.setVisits(new ArrayList<>());
+                        pet.setOwner(new OwnerRowMapper().mapRow(rs,-1));
                     }
 
                     rs.getInt("visits.id");
