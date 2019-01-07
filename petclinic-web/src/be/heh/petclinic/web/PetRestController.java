@@ -17,9 +17,9 @@ public class PetRestController {
     private PetComponent petComponentImpl;
 
     @RequestMapping("getPetWithVisitsByOwnerId")
-    public ResponseEntity<Pet> getPetWithVisitsByName(@RequestParam(value="id") Integer id) {
-        Pet pet = petComponentImpl.getPetWithVisitsByOwnerId(id);
-        return pet == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(pet, HttpStatus.OK);
+    public ResponseEntity<Collection<Pet>> getPetWithVisitsByName(@RequestParam(value="id") Integer id) {
+        Collection<Pet> pet = petComponentImpl.getPetWithVisitsByOwnerId(id);
+        return new ResponseEntity<>(pet, HttpStatus.OK);
     }
 
     @RequestMapping("getPets")

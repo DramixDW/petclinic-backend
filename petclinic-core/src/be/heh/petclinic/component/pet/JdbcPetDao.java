@@ -20,6 +20,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -40,26 +41,34 @@ public class JdbcPetDao {
         );
     }
 
-    public Pet getWithVisitsBy(String whereField,Object fieldValue) {
+    public Collection<Pet> getWithVisitsBy(String whereField,Object fieldValue) {
         String query = "SELECT * FROM pets " +
                 "LEFT JOIN visits ON pet_id=pets.id " +
-                "INNER JOIN types ON type_id=types.id WHERE " + whereField + " = ?";
+                "LEFT JOIN types ON type_id=types.id WHERE " + whereField + " = ?";
 
         JdbcTemplate select = new JdbcTemplate(dataSource);
 
-        Pet res = select.query(query, new Object[]{fieldValue}, rs -> {
-            Pet pet = null;
+        Collection<Pet> res = select.query(query, new Object[]{fieldValue}, rs -> {
+            HashMap<Integer,Pet> petMap = new HashMap<>();
+
             while(rs.next()) {
-                if (pet == null) {
-                    pet = new PetRowMapper().mapRow(rs, -1);
-                    pet.setVisits(new ArrayList<>());
+                Integer petID = rs.getInt("pets.id");
+
+                if(!petMap.containsKey(petID))
+                {
+                    Pet newPet = new PetRowMapper().mapRow(rs, -1);
+                    newPet.setVisits(new ArrayList<>());
+                    petMap.put(petID,newPet);
                 }
 
-                Visit visit = new VisitRowMapper().mapRow(rs,-1);
-                if (visit != null)
-                    pet.addVisit(visit);
+                rs.getInt("visits.id");
+                if (!rs.wasNull()) {
+                    Visit visit = new VisitRowMapper().mapRow(rs,-1);
+                    petMap.get(petID).addVisit(visit);
+                }
             }
-            return pet;
+
+            return petMap.values();
         });
 
         return res;
@@ -96,8 +105,8 @@ public class JdbcPetDao {
         JdbcTemplate template = new JdbcTemplate(dataSource);
         String query =
                 "SELECT * FROM pets " +
-                "INNER JOIN types ON type_id=types.id " +
-                "INNER JOIN owners ON owner_id=owners.id " +
+                "LEFT JOIN types ON type_id=types.id " +
+                "LEFT JOIN owners ON owner_id=owners.id " +
                 "WHERE pets.id=?";
 
         List<Pet> res = template.query(query, new Object[]{pet_id}, new RowMapper<Pet>() {

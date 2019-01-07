@@ -20,15 +20,15 @@ public class PetComponentImpl implements PetComponent {
     }
 
     @Override
-    public Pet getPetWithVisits(String name) {
+    public Collection<Pet> getPetWithVisits(String name) {
         return petDao.getWithVisitsBy("pets.name",name);
     }
     @Override
-    public Pet getPetWithVisits(Integer pet_id) {
+    public Collection<Pet> getPetWithVisits(Integer pet_id) {
         return petDao.getWithVisitsBy("pets.id",pet_id);
     }
     @Override
-    public Pet getPetWithVisitsByOwnerId(Integer owner_id) { return petDao.getWithVisitsBy("pets.owner_id",owner_id); }
+    public Collection<Pet> getPetWithVisitsByOwnerId(Integer owner_id) { return petDao.getWithVisitsBy("pets.owner_id",owner_id); }
 
     @Override
     public Pet getPetById(Integer pet_id) {
